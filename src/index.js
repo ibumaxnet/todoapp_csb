@@ -31,8 +31,10 @@ const onClickAdd = () => {
     incompBtn.innerText = "戻す";
 
     // 未完了リストに追加
+    compDiv.appendChild(compLi);
+    compLi.appendChild(incompBtn);
     document.getElementById("complete-list").appendChild(compDiv);
-    console.log(relocateText);
+    console.log(compDiv);
   });
 
   const deleBtn = document.createElement("button");
