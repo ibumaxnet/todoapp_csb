@@ -22,6 +22,7 @@ const onClickAdd = () => {
     // ボタンの前の要素のtextを取得
     const relocateText = compBtn.previousElementSibling.innerText;
     document.getElementById("incomplete-list").removeChild(relocateTarget);
+
     // 完了に追加
     const compDiv = document.createElement("div");
     compDiv.className = "complete-list";
